@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <link rel="stylesheet" href="app.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="container">
+
+      <!-- card 1 -->
+      <div class="card _1">
+        <div class="header">
+          <img src="images/image-jeremy.png" alt="user">
+          <div class="user-title">
+            <span>Report for</span>
+            <h1>Jeremy Robson</h1>
+          </div>
+        </div>
+        <div class="content">
+          <p id="daily-btn" style="color: #fff;">Daily</p>
+          <p id="weekly-btn">Weekly</p>
+          <p id="monthly-btn">Monthly</p>
+        </div>
+      </div>
+
+      <!-- card 2 -->
+      <div class="card _2">
+        <div class="card-body">
+          <div class="card-header">
+            <h2>Work</h2>
+            <!-- nav buttons -->
+            <div class="btn-container">
+              <img class="nav-btn" src="images/icon-ellipsis.svg" role="navigation" alt="">
+              <div class="btn-wrapper hidden">
+                <p class="daily-btn" style=" color: #fff;">Daily</p>
+                <p class="weekly-btn">Weekly</p>
+                <p class="monthly-btn">Monthly</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- daily -->
+          <div class="daily">
+            <p>5hrs</p>
+            <p>Yesterday - 7hrs</p>
+          </div>
+
+          <!-- weekly -->
+          <div class="weekly hidden">
+            <p> 32hrs</p>
+            <p>Last Week - 36hrs</p>
+          </div>
+
+          <!-- monthly -->
+          <div class="monthly hidden">
+            <p>103hrs</p>
+            <p>Last Month - 128hrs</p>
+          </div>
+
+
+        </div>
+      </div>
+
+      <!-- card 3 -->
+      <div class="card _3">
+        <div class="card-body">
+          <div class="card-header">
+            <h2>Play</h2>
+            <!-- nav buttons -->
+            <div class="btn-container">
+              <img class="nav-btn" src="images/icon-ellipsis.svg" role="navigation" alt="">
+              <div class="btn-wrapper hidden">
+                <p class="daily-btn" style=" color: #fff;">Daily</p>
+                <p class="weekly-btn">Weekly</p>
+                <p class="monthly-btn">Monthly</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- daily -->
+          <div class="daily">
+            <p>1hr</p>
+            <p>Yesterday - 2hrs</p>
+          </div>
+
+          <!-- weekly -->
+          <div class="weekly hidden">
+            <p>10hrs</p>
+            <p>Last week - 8hrs</p>
+          </div>
+
+          <!-- monthly -->
+          <div class="monthly hidden">
+            <p>23hrs</p>
+            <p>Last Month - 29hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- card 4 -->
+      <div class="card _4">
+        <div class="card-body">
+          <div class="card-header">
+            <h2>Study</h2>
+            <!-- nav buttons -->
+            <div class="btn-container">
+              <img class="nav-btn" src="images/icon-ellipsis.svg" role="navigation" alt="">
+              <div class="btn-wrapper hidden">
+                <p class="daily-btn" style=" color: #fff;">Daily</p>
+                <p class="weekly-btn">Weekly</p>
+                <p class="monthly-btn">Monthly</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- daily -->
+          <div class="daily">
+            <p>0hrs</p>
+            <p>Yesterday - 1hr</p>
+          </div>
+
+          <!-- weekly -->
+          <div class="weekly hidden">
+            <p>4hrs</p>
+            <p>Last Week - 7hrs</p>
+          </div>
+
+          <!-- monthly -->
+          <div class="monthly hidden">
+            <p>13hrs</p>
+            <p>Last Month - 19hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- card 5 -->
+      <div class="card _5">
+        <div class="card-body">
+          <div class="card-header">
+            <h2>Exercise</h2>
+            <!-- nav buttons -->
+            <div class="btn-container">
+              <img class="nav-btn" src="images/icon-ellipsis.svg" role="navigation" alt="">
+              <div class="btn-wrapper hidden">
+                <p class="daily-btn" style=" color: #fff;">Daily</p>
+                <p class="weekly-btn">Weekly</p>
+                <p class="monthly-btn">Monthly</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- daily -->
+          <div class="daily">
+            <p>1hr</p>
+            <p>Yesterday - 1hr</p>
+          </div>
+
+          <!-- weekly -->
+          <div class="weekly hidden">
+            <p>4hrs</p>
+            <p>Last Week - 5hrs</p>
+          </div>
+
+          <!-- monthly -->
+          <div class="monthly hidden">
+            <p>11hrs</p>
+            <p>Last Month - 18hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- card 6 -->
+      <div class="card _6">
+        <div class="card-body">
+          <div class="card-header">
+            <h2>Social</h2>
+
+            <!-- nav buttons -->
+            <div class="btn-container">
+              <img class="nav-btn" src="images/icon-ellipsis.svg" role="navigation" alt="">
+              <div class="btn-wrapper hidden">
+                <p class="daily-btn" style=" color: #fff;">Daily</p>
+                <p class="weekly-btn">Weekly</p>
+                <p class="monthly-btn">Monthly</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- daily -->
+          <div class="daily">
+            <p>1hr</p>
+            <p>Yesterday - 3hrs</p>
+          </div>
+
+          <!-- weekly -->
+          <div class="weekly hidden">
+            <p>5hrs</p>
+            <p>Last Week - 10hrs</p>
+          </div>
+
+          <!-- monthly -->
+          <div class="monthly hidden">
+            <p>21hrs</p>
+            <p>Last Month - 23hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- card 7 -->
+      <div class="card _7">
+        <div class="card-body">
+          <div class="card-header">
+            <h2>Self Care</h2>
+
+            <!-- nav buttons -->
+            <div class="btn-container">
+              <img class="nav-btn" src="images/icon-ellipsis.svg" role="navigation" alt="">
+              <div class="btn-wrapper hidden">
+                <p class="daily-btn" style=" color: #fff;">Daily</p>
+                <p class="weekly-btn">Weekly</p>
+                <p class="monthly-btn">Monthly</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- daily -->
+          <div class="daily">
+            <p>0hrs</p>
+            <p>Yesterday - 1hr</p>
+          </div>
+
+          <!-- weekly -->
+          <div class="weekly hidden">
+            <p>2hrs</p>
+            <p>Last Week - 2hrs</p>
+          </div>
+
+          <!-- monthly -->
+          <div class="monthly hidden">
+            <p>7hrs</p>
+            <p>Last Month - 11hrs</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <!-- attribution -->
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend
+        Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="data.json"></script>
+  <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>
